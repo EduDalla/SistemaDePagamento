@@ -1,5 +1,9 @@
+using System.Text;
 using SistemaDePagamento.Models;
 using SistemaDePagamento.Utils;
+
+Console.InputEncoding = Encoding.UTF8;
+Console.OutputEncoding = Encoding.UTF8;
 
 while (true)
 {
@@ -15,10 +19,10 @@ while (true)
             ProcessarPagamentoBoleto();
             break;
         case "3":
-            Console.WriteLine("Encerrando o sistema. Ate logo!");
+            Console.WriteLine("Encerrando o sistema. Até logo!");
             return;
         default:
-            Console.WriteLine("Opcao invalida. Tente novamente.");
+            Console.WriteLine("Opção inválida. Tente novamente.");
             break;
     }
 
@@ -28,7 +32,7 @@ while (true)
 static void ProcessarPagamentoCartao()
 {
     decimal valor = InputHelper.LerValorMonetario("Informe o valor do pagamento:");
-    string numeroCartao = InputHelper.LerTextoObrigatorio("Informe o numero do cartao:");
+    string numeroCartao = InputHelper.LerTextoObrigatorio("Informe o número do cartão:");
 
     var pagamento = new PagamentoCartao
     {
@@ -44,7 +48,7 @@ static void ProcessarPagamentoCartao()
 static void ProcessarPagamentoBoleto()
 {
     decimal valor = InputHelper.LerValorMonetario("Informe o valor do pagamento:");
-    string codigoBarras = InputHelper.LerTextoObrigatorio("Informe o codigo de barras:");
+    string codigoBarras = InputHelper.LerTextoObrigatorio("Informe o código de barras:");
 
     var pagamento = new PagamentoBoleto
     {

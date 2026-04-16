@@ -16,7 +16,7 @@ public static class InputHelper
                 return valor;
             }
 
-            Console.WriteLine("Valor invalido. Informe um valor maior ou igual a 0,01, com ate duas casas decimais. Exemplos: 150,50; 150.50; 1.500,50.");
+            Console.WriteLine("Valor inválido. Informe um valor maior ou igual a 0,01, com até duas casas decimais. Exemplos: 150,50; 150.50; 1.500,50.");
         }
     }
 
@@ -32,7 +32,7 @@ public static class InputHelper
                 return entrada.Trim();
             }
 
-            Console.WriteLine("Campo obrigatorio. Tente novamente.");
+            Console.WriteLine("Campo obrigatório. Tente novamente.");
         }
     }
 

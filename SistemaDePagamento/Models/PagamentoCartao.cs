@@ -6,6 +6,6 @@ public class PagamentoCartao : Pagamento
 
     public override string ProcessarPagamento()
     {
-        return $"Processando pagamento de {FormatarValor()} via Cartao (Numero: {NumeroCartao}) na data {FormatarData()}.";
+        return $"Processando pagamento de {FormatarValor()} via Cartão (Número: {NumeroCartao}) na data {FormatarData()}.";
     }
 }

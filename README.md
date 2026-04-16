@@ -1,6 +1,6 @@
 # Sistema de Pagamento
 
-Aplicacao console em C# desenvolvida para simular o processamento de pagamentos com Cartao e Boleto.
+Aplicação console em C# desenvolvida para simular o processamento de pagamentos com Cartão e Boleto.
 
 ## Integrantes
 
@@ -17,27 +17,27 @@ Eduardo  - rm556803
 
 ## Objetivo do Projeto
 
-Permitir que o usuario escolha uma forma de pagamento, informe o valor e os dados especificos da operacao, e visualize um resumo do processamento diretamente no console.
+Permitir que o usuário escolha uma forma de pagamento, informe o valor e os dados específicos da operação, e visualize um resumo do processamento diretamente no console.
 
 ## Tecnologias Utilizadas
 
 - C#
 - .NET
-- Aplicacao Console
+- Aplicação Console
 
 ## Estrutura do Projeto
 
-- `SistemaDePagamento/Program.cs`: fluxo principal da aplicacao
-- `SistemaDePagamento/Models`: classes de dominio orientadas a objetos
-- `SistemaDePagamento/Utils`: menu estatico e leitura/validacao dos dados
+- `SistemaDePagamento/Program.cs`: fluxo principal da aplicação
+- `SistemaDePagamento/Models`: classes de domínio orientadas a objetos
+- `SistemaDePagamento/Utils`: menu estático e leitura/validação dos dados
 
 ## Funcionalidades
 
-- Menu principal com exibicao obrigatoria via `Menu.ExibirMenu()`
-- Processamento de pagamento com Cartao
+- Menu principal com exibição obrigatória via `Menu.ExibirMenu()`
+- Processamento de pagamento com Cartão
 - Processamento de pagamento com Boleto
-- Validacao de entrada para valores monetarios com virgula ou ponto
-- Exibicao de resumo com valor formatado em `pt-BR` e data no formato `dd/MM/yyyy`
+- Validação de entrada para valores monetários com vírgula ou ponto
+- Exibição de resumo com valor formatado em `pt-BR` e data no formato `dd/MM/yyyy`
 
 ## Como Executar
 
@@ -48,20 +48,47 @@ Permitir que o usuario escolha uma forma de pagamento, informe o valor e os dado
 dotnet run --project .\SistemaDePagamento\SistemaDePagamento.csproj
 ```
 
-3. Escolha a opcao desejada no menu.
+3. Escolha a opção desejada no menu.
 
 ## Exemplos de Uso
 
-- Cartao:
-  - `Processando pagamento de R$ 150,50 via Cartao (Numero: 1234-5678-9012-3456) na data 01/01/2025.`
+- Cartão:
+  - `Processando pagamento de R$ 150,50 via Cartão (Número: 1234-5678-9012-3456) na data 01/01/2025.`
 - Boleto:
   - `Processando pagamento de R$ 150,50 via Boleto (Cod Barra: 1111111122222223333333344444444) na data 01/01/2025.`
 
-## Evidencias de Teste
+## Evidências de Teste
 
-Adicionar nesta secao os prints das telas com evidencia de:
+Os prints abaixo foram gerados a partir de execuções reais do console com o comando:
 
-- teste de pagamento com Cartao
-- teste de pagamento com Boleto
-- validacao de valor invalido
-- encerramento da aplicacao
+```bash
+dotnet run --project .\SistemaDePagamento\SistemaDePagamento.csproj
+```
+
+### Pagamento com Cartão usando vírgula
+
+![Pagamento com Cartão usando vírgula](docs/evidencias/01-cartao-virgula.png)
+
+### Pagamento com Cartão usando ponto
+
+![Pagamento com Cartão usando ponto](docs/evidencias/02-cartao-ponto.png)
+
+### Validação de valor mínimo
+
+![Validação de valor mínimo](docs/evidencias/03-cartao-valor-minimo.png)
+
+### Pagamento com Boleto usando milhar brasileiro
+
+![Pagamento com Boleto usando milhar brasileiro](docs/evidencias/04-boleto-milhar-br.png)
+
+### Pagamento com Boleto usando milhar internacional
+
+![Pagamento com Boleto usando milhar internacional](docs/evidencias/05-boleto-milhar-internacional.png)
+
+### Validação de formatos inválidos e ambíguos
+
+![Validação de formatos inválidos e ambíguos](docs/evidencias/06-formatos-invalidos.png)
+
+### Encerramento da aplicação
+
+![Encerramento da aplicação](docs/evidencias/07-sair.png)
