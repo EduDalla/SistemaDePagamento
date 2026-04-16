@@ -5,9 +5,13 @@ Aplicacao console em C# desenvolvida para simular o processamento de pagamentos 
 ## Integrantes
 
 Abner    - rm558468
+
 Heloísa  - rm554535
+
 Fernando - rm555201
+
 Thomas   - rm554812
+
 Eduardo  - rm556803
 
 
