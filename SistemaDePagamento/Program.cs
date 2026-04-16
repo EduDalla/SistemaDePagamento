@@ -11,6 +11,9 @@ while (true)
         case "1":
             ProcessarPagamentoCartao();
             break;
+        case "2":
+            ProcessarPagamentoBoleto();
+            break;
         case "3":
             Console.WriteLine("Encerrando o sistema. Ate logo!");
             return;
@@ -32,6 +35,22 @@ static void ProcessarPagamentoCartao()
         Valor = valor,
         DataProcessamento = DateTime.Now,
         NumeroCartao = numeroCartao
+    };
+
+    Console.WriteLine();
+    Console.WriteLine(pagamento.ProcessarPagamento());
+}
+
+static void ProcessarPagamentoBoleto()
+{
+    decimal valor = InputHelper.LerValorMonetario("Informe o valor do pagamento:");
+    string codigoBarras = InputHelper.LerTextoObrigatorio("Informe o codigo de barras:");
+
+    var pagamento = new PagamentoBoleto
+    {
+        Valor = valor,
+        DataProcessamento = DateTime.Now,
+        CodigoBarras = codigoBarras
     };
 
     Console.WriteLine();
