@@ -1,0 +1,19 @@
+# Build outputs
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# .NET CLI local/cache folders
+.dotnet/
+.buildtemp/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
