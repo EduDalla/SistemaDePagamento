@@ -6,7 +6,7 @@ Aplicacao console em C# desenvolvida para simular o processamento de pagamentos 
 
 Abner    - rm558468
 
-Heloísa  - rm554535
+Heloisa  - rm554535
 
 Fernando - rm555201
 
@@ -59,9 +59,36 @@ dotnet run --project .\SistemaDePagamento\SistemaDePagamento.csproj
 
 ## Evidencias de Teste
 
-Adicionar nesta secao os prints das telas com evidencia de:
+Os prints abaixo foram gerados a partir de execucoes reais do console com o comando:
 
-- teste de pagamento com Cartao
-- teste de pagamento com Boleto
-- validacao de valor invalido
-- encerramento da aplicacao
+```bash
+dotnet run --project .\SistemaDePagamento\SistemaDePagamento.csproj
+```
+
+### Pagamento com Cartao usando virgula
+
+![Pagamento com Cartao usando virgula](docs/evidencias/01-cartao-virgula.png)
+
+### Pagamento com Cartao usando ponto
+
+![Pagamento com Cartao usando ponto](docs/evidencias/02-cartao-ponto.png)
+
+### Validacao de valor minimo
+
+![Validacao de valor minimo](docs/evidencias/03-cartao-valor-minimo.png)
+
+### Pagamento com Boleto usando milhar brasileiro
+
+![Pagamento com Boleto usando milhar brasileiro](docs/evidencias/04-boleto-milhar-br.png)
+
+### Pagamento com Boleto usando milhar internacional
+
+![Pagamento com Boleto usando milhar internacional](docs/evidencias/05-boleto-milhar-internacional.png)
+
+### Validacao de formatos invalidos e ambiguos
+
+![Validacao de formatos invalidos e ambiguos](docs/evidencias/06-formatos-invalidos.png)
+
+### Encerramento da aplicacao
+
+![Encerramento da aplicacao](docs/evidencias/07-sair.png)
